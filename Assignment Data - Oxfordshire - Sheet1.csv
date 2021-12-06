@@ -1,0 +1,15 @@
+Parameter,Datatype,132/11,11/0.415,Explanation
+name,string,sstn,distr,name of the transformer
+hv_bus*,integer,0,1,high voltage bus index of the transformer
+lv_bus*,integer,1,2,low voltage bus index of the transformer
+sn_mva*,float,0.5,0.12,rated apparent power of the transformer [MVA]
+vn_hv_kv*,float,132,11,rated voltage at high voltage bus [kV]
+vn_lv_kv*,float,11,0.415,rated voltage at low voltage bus [kV]
+vk_percent*,float,10,10,short circuit voltage [%]
+vkr_percent*,float,1,1,real component of short circuit voltage [%]
+pfe_kw*,float,5,1.2,iron losses [kW]
+i0_percent*,float,5,5,open loop losses in [%]
+shift_degree*,float,0.05,0.2,transformer phase shift angle
+in_service*,boolean,TRUE,TRUE,specifies if the transformer is in service
+oltc*,boolean,FALSE,FALSE,specifies if the transformer has an OLTC (short-circuit relevant)
+power_station_unit*,boolean,FALSE,FALSE,specifies if the transformer is part of a power_station_unit (short-circuit relevant).
